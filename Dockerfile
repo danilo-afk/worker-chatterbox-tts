@@ -1,4 +1,5 @@
-FROM runpod/pytorch:2.4.0-py3.11-cuda12.4.1-devel-ubuntu22.04
+# cu128/torch2.7 = suporta Blackwell sm_120 (RunPod aloca PRO6000 MIG no tier 24GB)
+FROM pytorch/pytorch:2.7.1-cuda12.8-cudnn9-runtime
 
 WORKDIR /app
 
